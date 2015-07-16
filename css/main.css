@@ -1,0 +1,288 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:300,400|Roboto:400,700);
+
+html, body {
+    height: 100%;
+    min-height: 600px;
+}
+
+body {
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    margin: 0;
+    background-image: url("../img/bkg3.png");
+    background-color: #cecece;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa";
+    text-transform: uppercase;
+    font-size: 3.8em;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    word-spacing: 0.2em;
+    line-height: 100px;
+    color: #8E2800;
+}
+
+.wrapper {
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+article {
+    background: #fdf5e8;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    margin: 20px auto;
+    border-left: 5px solid;
+    border-color:  #468966;
+    float: none !important;
+}
+
+article ul.todoList {
+    list-style-type: none;
+    padding: 5px 0 10px 0;
+}
+
+article ul.todoList li {
+    border-bottom: #B64926 1px solid;
+    padding: 5px 0 5px;
+    text-align: right;
+}
+
+article ul.todoList li i.status {
+    margin-right: 5px;
+}
+
+article ul.todoList li input[type="text"] {
+    color: #333;
+    background: none;
+    border: 0;
+    width: 97%;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+article ul.todoList li.completedTask input[type="text"] {
+    color: #777;
+    text-decoration: line-through;
+}
+
+article ul.todoList li input[type="text"]:hover {
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+article ul.todoList li input[type="text"]::-webkit-input-placeholder{
+    color: #ccc;
+}
+
+article ul.todoList li.completedTask input[type="text"]::-webkit-input-placeholder{
+    text-decoration: line-through;
+}
+
+article ul.todoList li input[type="text"]:focus {
+    background-color: #fff;
+    outline: none;
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+article ul.todoList li.completedTask input[type="text"]:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+article ul.todoList li.newTask input[type="text"] {
+    background-color: #fff;
+    outline: none;
+    font-size: 2em;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul.pagination li a {
+    background-color: transparent;
+    border: transparent 1px solid;
+    color: #8E2800;
+}
+
+nav ul.pagination li a:hover {
+    border: 1px solid;
+    border-color: #8E2800;
+    background-color: transparent;
+    color: #8E2800;
+}
+
+nav ul.pagination li.active a {
+    background-color: #8E2800;
+    border: 1px solid;
+    border-color: transparent;
+}
+
+nav ul.pagination li.active a:hover {
+    background-color: #8E2800;
+    border: 1px solid;
+    border-color: transparent;
+}
+
+nav ul.pagination li a:active {
+    background-color: transparent;
+    border: transparent 1px solid;
+    color: #8E2800;
+}
+
+.statusFilter {
+    color: #8E2800;
+    padding-bottom: 10px;
+}
+
+.statusFilter div {
+    vertical-align: top;
+}
+
+.statusFilter .btn-group {
+    text-align: center;
+}
+
+.statusFilter .btn-default {
+    border: 1px solid;
+    border-color: #8E2800;
+    background: transparent;
+    color: #8E2800;
+}
+
+.statusFilter .btn-default:hover {
+    background-color: #fefefe;
+}
+
+.statusFilter .btn-group .btn {
+    display: table-cell;
+    float: none;
+}
+
+.statusFilter .clearCompleted {
+    text-align: right;
+}
+
+footer {
+    background: rgba(70, 137, 102, 0.9);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 0.8em;
+    padding: 10px 0;
+}
+
+/* Color Schemes */
+
+.colorPaletteWrapper {
+    padding: 20px;
+}
+
+.colorPaletteWrapper h1 {
+    font-size: 3em;
+}
+
+.colorPaletteWrapper h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa";
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    word-spacing: 0.2em;
+    line-height: 100px;
+    color: #8E2800;
+}
+
+.colorPaletteWrapper div {
+    float: left;
+    text-align: center;
+    display: block;
+    width: 19%;
+    height: 25%;
+    position: relative;
+    transition: opacity 0.5s ease;
+    border: 1px solid;
+    border-color: transparent;
+    margin: 1px;
+}
+
+.turquoise { color: #1abc9c !important; }
+.emerland { color: #2ecc71 !important; }
+.peterriver { color: #3498db !important; }
+.amethyst { color: #9b59b6 !important; }
+.wetasphalt { color: #34495e !important; }
+.greensea { color: #16a085 !important; }
+.nephritis { color: #27ae60 !important; }
+.belizehole { color: #2980b9 !important; }
+.wisteria { color: #8e44ad !important; }
+.midnightblue { color: #2c3e50 !important; }
+.sunflower { color: #f1c40f !important; }
+.carrot { color: #e67e22 !important; }
+.alizarin { color: #e74c3c !important; }
+.clouds { color: #999 !important; }
+.concrete { color: #95a5a6 !important; }
+.orange { color: #f39c12 !important; }
+.pumpkin { color: #d35400 !important; }
+.pomegranate { color: #c0392b !important; }
+.silver { color: #bdc3c7 !important; }
+.asbestos { color: #7f8c8d !important; }
+
+.bkgTurquoise { background-color: #1abc9c !important; }
+.bkgEmerland { background-color: #2ecc71 !important; }
+.bkgPeterriver { background-color: #3498db !important; }
+.bkgAmethyst { background-color: #9b59b6 !important; }
+.bkgWetasphalt { background-color: #34495e !important; }
+.bkgGreensea { background-color: #16a085 !important; }
+.bkgNephritis { background-color: #27ae60 !important; }
+.bkgBelizehole { background-color: #2980b9 !important; }
+.bkgWisteria { background-color: #8e44ad !important; }
+.bkgMidnightblue { background-color: #2c3e50 !important; }
+.bkgSunflower { background-color: #f1c40f !important; }
+.bkgCarrot { background-color: #e67e22 !important; }
+.bkgAlizarin { background-color: #e74c3c !important; }
+.bkgClouds { background-color: #ecf0f1 !important; color: #999; }
+.bkgConcrete { background-color: #95a5a6 !important; }
+.bkgOrange { background-color: #f39c12 !important; }
+.bkgPumpkin { background-color: #d35400 !important; }
+.bkgPomegranate { background-color: #c0392b !important; }
+.bkgSilver { background-color: #bdc3c7 !important; }
+.bkgAsbestos { background-color: #7f8c8d !important; }
+
+.borderTurquoise { border-color: #1abc9c !important; }
+.borderEmerland { border-color: #2ecc71 !important; }
+.borderPeterriver { border-color: #3498db !important; }
+.borderAmethyst { border-color: #9b59b6 !important; }
+.borderWetasphalt { border-color: #34495e !important; }
+.borderGreensea { border-color: #16a085 !important; }
+.borderNephritis { border-color: #27ae60 !important; }
+.borderBelizehole { border-color: #2980b9 !important; }
+.borderWisteria { border-color: #8e44ad !important; }
+.borderMidnightblue { border-color: #2c3e50 !important; }
+.borderSunflower { border-color: #f1c40f !important; }
+.borderCarrot { border-color: #e67e22 !important; }
+.borderAlizarin { border-color: #e74c3c !important; }
+.borderClouds { border-color: #ecf0f1 !important; }
+.borderConcrete { border-color: #95a5a6 !important; }
+.borderOrange { border-color: #f39c12 !important; }
+.borderPumpkin { border-color: #d35400 !important; }
+.borderPomegranate { border-color: #c0392b !important; }
+.borderSilver { border-color: #bdc3c7 !important; }
+.borderAsbestos { border-color: #7f8c8d !important; }
